@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "My groundbreaking Nuxt.js project",
+  "author": "vic",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.5.3",
+    "@nuxtjs/axios": "^5.4.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.13",
+    "cross-env": "^5.2.0",
+    "jquery": "^3.3.1",
+    "nuxt": "^2.4.0",
+    "vue": "^2.6.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
