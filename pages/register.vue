@@ -51,16 +51,20 @@
 		},
 		methods: {
 			async submit() {
-				await this.$axios.$post('register', this.form)
-				await this.$auth.loginWith('local', {
-					data: {
-						email: this.form.email,
-						password: this.form.password
-					}
-				})
+				this.$axios.$post('register', this.form)
+				.then(data => {
 
-				// redirect
-				this.$router.push('')
+					this.$auth.loginWith("local", {
+						data: {
+							email: this.form.email,
+							password: this.form.password
+						}
+					});
+					console.log(data);
+				})
+				.catch(err => {
+					console.log(err);
+				});
 			}
 		}
 	}
